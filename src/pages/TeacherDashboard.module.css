@@ -1,0 +1,441 @@
+.wrap {
+  padding: 24px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #1b4b66;
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #4a90a4;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.dashboard {
+  display: grid;
+  gap: 30px;
+}
+
+.studentSection,
+.taskSection,
+.analyticsSection,
+.communicationSection {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 2px solid rgba(146, 197, 222, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin: 0 0 25px;
+  color: #1b4b66;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Student Management */
+.studentList {
+  display: grid;
+  gap: 15px;
+}
+
+.studentCard {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 2px solid rgba(146, 197, 222, 0.2);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.studentCard:hover {
+  border-color: #92c5de;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(146, 197, 222, 0.3);
+}
+
+.studentCard.selected {
+  border-color: #92c5de;
+  background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+}
+
+.studentAvatar {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fffdf5, #f0f8ff);
+  border-radius: 50%;
+  border: 2px solid rgba(146, 197, 222, 0.3);
+}
+
+.studentInfo h4 {
+  margin: 0 0 5px;
+  color: #1b4b66;
+  font-size: 1.1rem;
+}
+
+.studentInfo p {
+  margin: 0 0 5px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.overallProgress {
+  color: #92c5de;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Task Assignment */
+.taskForm {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.taskInput {
+  padding: 12px 15px;
+  border: 2px solid rgba(146, 197, 222, 0.3);
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.taskInput:focus {
+  border-color: #92c5de;
+}
+
+.assignBtn {
+  background: linear-gradient(135deg, #92c5de, #a8d8ea);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.assignBtn:hover {
+  background: linear-gradient(135deg, #7bb3d3, #96d0e6);
+  transform: scale(1.05);
+}
+
+.assignedTasks h4 {
+  margin: 0 0 15px;
+  color: #1b4b66;
+  font-size: 1.1rem;
+}
+
+.taskList {
+  display: grid;
+  gap: 10px;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  border-radius: 12px;
+  border: 2px solid rgba(146, 197, 222, 0.2);
+}
+
+.taskContent {
+  flex: 1;
+}
+
+.taskText {
+  display: block;
+  color: #1b4b66;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.taskDate {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.taskStatus {
+  background: linear-gradient(135deg, #92c5de, #a8d8ea);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Analytics */
+.analyticsGrid {
+  display: grid;
+  gap: 20px;
+}
+
+.analyticsCard {
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid rgba(146, 197, 222, 0.2);
+  transition: all 0.3s ease;
+}
+
+.analyticsCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.analyticsHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.analyticsAvatar {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fffdf5, #f0f8ff);
+  border-radius: 50%;
+  border: 2px solid rgba(146, 197, 222, 0.3);
+}
+
+.analyticsInfo {
+  flex: 1;
+}
+
+.analyticsInfo h4 {
+  margin: 0 0 5px;
+  color: #1b4b66;
+  font-size: 1.1rem;
+}
+
+.analyticsInfo p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.analyticsScore {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #92c5de;
+}
+
+.progressBars {
+  display: grid;
+  gap: 15px;
+}
+
+.progressCard {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  border: 2px solid rgba(146, 197, 222, 0.1);
+}
+
+.progressHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.progressIcon {
+  font-size: 1.2rem;
+}
+
+.progressLabel {
+  color: #1b4b66;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.progressTrack {
+  height: 8px;
+  background: rgba(146, 197, 222, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.progressValue {
+  text-align: right;
+  color: #1b4b66;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Communication */
+.communicationForm {
+  display: grid;
+  gap: 20px;
+}
+
+.studentSelector {
+  display: grid;
+  gap: 10px;
+}
+
+.studentSelector label {
+  color: #1b4b66;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.studentSelect {
+  padding: 12px 15px;
+  border: 2px solid rgba(146, 197, 222, 0.3);
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background: white;
+}
+
+.studentSelect:focus {
+  border-color: #92c5de;
+}
+
+.feedbackTextarea {
+  width: 100%;
+  min-height: 120px;
+  border-radius: 12px;
+  border: 2px solid rgba(146, 197, 222, 0.3);
+  padding: 15px;
+  resize: vertical;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.feedbackTextarea:focus {
+  border-color: #92c5de;
+}
+
+.sendFeedbackBtn {
+  background: linear-gradient(135deg, #92c5de, #a8d8ea);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  justify-self: start;
+}
+
+.sendFeedbackBtn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #7bb3d3, #96d0e6);
+  transform: scale(1.05);
+}
+
+.sendFeedbackBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .analyticsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    padding: 20px 15px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .taskForm {
+    grid-template-columns: 1fr;
+  }
+  
+  .analyticsHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .studentCard {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .card {
+    padding: 15px;
+  }
+  
+  .progressBars {
+    gap: 12px;
+  }
+  
+  .progressCard {
+    padding: 12px;
+  }
+}
+

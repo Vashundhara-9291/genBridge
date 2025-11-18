@@ -1,0 +1,246 @@
+.child-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.child-login-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  animation: bounceIn 1s ease-out;
+   margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.child-header {
+  margin-bottom: 30px;
+}
+
+.child-avatar {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.child-header h1 {
+  color: #FF6B6B;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.child-header p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.child-login-form {
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4ECDC4;
+  margin-bottom: 8px;
+}
+
+.input-icon {
+  font-size: 1.3rem;
+  margin-right: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px;
+  border: 3px solid #E8F4FD;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #F8FDFF;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #4ECDC4;
+  background: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(78, 205, 196, 0.3);
+}
+
+.child-login-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.child-login-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
+}
+
+.child-login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loading-spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.child-login-footer {
+  border-top: 2px dashed #E8F4FD;
+  padding-top: 20px;
+}
+
+.back-btn {
+  background: #96CEB4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #7FB069;
+  transform: translateY(-2px);
+}
+
+.help-text {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-star,
+.floating-heart,
+.floating-rocket,
+.floating-book {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-star {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.floating-heart {
+  top: 20%;
+  right: 15%;
+  animation-delay: 1.5s;
+}
+
+.floating-rocket {
+  bottom: 20%;
+  left: 15%;
+  animation-delay: 3s;
+}
+
+.floating-book {
+  bottom: 15%;
+  right: 10%;
+  animation-delay: 4.5s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-20px) rotate(5deg); }
+  50% { transform: translateY(-10px) rotate(-5deg); }
+  75% { transform: translateY(-15px) rotate(3deg); }
+}
+
+@media (max-width: 768px) {
+  .child-login-card {
+    padding: 30px 20px;
+    margin: 20px;
+  }
+  
+  .child-header h1 {
+    font-size: 1.7rem;
+  }
+  
+  .floating-elements {
+    display: none;
+  }
+}

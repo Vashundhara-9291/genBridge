@@ -1,0 +1,268 @@
+.cursor {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.2s ease;
+  transform: translate(-16px, -16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character {
+  font-size: 24px;
+  transition: all 0.3s ease;
+  animation: idle 3s ease-in-out infinite;
+}
+
+.characterWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.earLeft, .earRight {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 3px;
+  top: -6px;
+}
+
+.earLeft { left: -4px; transform-origin: bottom right; }
+.earRight { right: -4px; transform-origin: bottom left; }
+
+.tail {
+  position: absolute;
+  width: 6px;
+  height: 14px;
+  border-radius: 6px;
+  background: rgba(0,0,0,0.08);
+  right: -8px;
+  bottom: -4px;
+  transform-origin: top left;
+}
+
+.tool {
+  position: absolute;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+}
+
+/* Character-specific styles */
+.cat .character {
+  animation: catIdle 4s ease-in-out infinite;
+}
+
+.dog .character {
+  animation: dogIdle 3s ease-in-out infinite;
+}
+
+/* Size variations */
+.small {
+  width: 24px;
+  height: 24px;
+  transform: translate(-12px, -12px);
+}
+
+.small .character {
+  font-size: 18px;
+}
+
+.large {
+  width: 40px;
+  height: 40px;
+  transform: translate(-20px, -20px);
+}
+
+.large .character {
+  font-size: 30px;
+}
+
+/* State animations */
+.normal .character {
+  animation-play-state: running;
+}
+
+.hovering .character {
+  animation-play-state: paused;
+  transform: scale(1.1);
+}
+
+.button .character {
+  animation: buttonHover 0.5s ease-in-out;
+}
+
+.link .character {
+  animation: linkHover 0.5s ease-in-out;
+}
+
+.learning .character {
+  animation: learningMode 1s ease-in-out infinite;
+}
+
+.learning .tool {
+  opacity: 1;
+  transform: translateY(-25px);
+}
+
+.game .character {
+  animation: gameMode 0.8s ease-in-out infinite;
+}
+
+.game .tool {
+  opacity: 1;
+  transform: translateY(-25px);
+  animation: bounce 0.6s ease-in-out infinite;
+}
+
+/* playful animations */
+.cat .earLeft, .cat .earRight {
+  background: #fff;
+}
+
+.dog .earLeft, .dog .earRight {
+  background: #fbe6d6;
+}
+
+.game .tail, .learning .tail, .story .tail {
+  animation: tailWag 0.6s ease-in-out infinite;
+}
+
+@keyframes tailWag {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes earWiggle {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(12deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.learning .earLeft, .learning .earRight,
+.game .earLeft, .game .earRight,
+.story .earLeft, .story .earRight {
+  animation: earWiggle 1s ease-in-out infinite;
+}
+
+/* small jump on click */
+.click { transform: translateY(-6px) scale(1.05); }
+
+/* blink effect applied to character via pseudo-element */
+.character::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 8%;
+  background: rgba(0,0,0,0.06);
+  bottom: 14%;
+  left: 20%;
+  border-radius: 20px;
+  opacity: 0;
+  transform-origin: center;
+}
+
+.learning .character::after,
+.game .character::after,
+.story .character::after {
+  animation: blink 4s infinite;
+}
+
+@keyframes blink {
+  0%, 95% { opacity: 0; transform: scaleX(1); }
+  97% { opacity: 1; transform: scaleX(1); }
+  100% { opacity: 0; transform: scaleX(0.2); }
+}
+
+.story .character {
+  animation: storyMode 1.2s ease-in-out infinite;
+}
+
+.story .tool {
+  opacity: 1;
+  transform: translateY(-25px);
+}
+
+.click .character {
+  animation: clickAnimation 0.2s ease-out;
+}
+
+/* Keyframe animations */
+@keyframes idle {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.05) rotate(2deg); }
+}
+
+@keyframes catIdle {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.02) rotate(-1deg); }
+  50% { transform: scale(1.05) rotate(1deg); }
+  75% { transform: scale(1.02) rotate(-0.5deg); }
+}
+
+@keyframes dogIdle {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  33% { transform: scale(1.03) rotate(1deg); }
+  66% { transform: scale(1.05) rotate(-1deg); }
+}
+
+@keyframes buttonHover {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2) rotate(5deg); }
+  100% { transform: scale(1.1); }
+}
+
+@keyframes linkHover {
+  0% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.15) rotate(-3deg); }
+  100% { transform: scale(1.1) rotate(0deg); }
+}
+
+@keyframes learningMode {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  50% { transform: scale(1.1) rotate(2deg); }
+}
+
+@keyframes gameMode {
+  0%, 100% { transform: scale(1) translateY(0); }
+  50% { transform: scale(1.15) translateY(-2px); }
+}
+
+@keyframes storyMode {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.05) rotate(-1deg); }
+  75% { transform: scale(1.05) rotate(1deg); }
+}
+
+@keyframes clickAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.8); }
+  100% { transform: scale(1.1); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(-25px); }
+  50% { transform: translateY(-30px); }
+}
+
+/* Learning mode special styling */
+.learningMode .character {
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5));
+}
+
+/* Hide cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  transition: transform 0.2s ease;
+  z-index: 1000;
+}
+
+.character {
+  width: var(--cursor-size, 50px);
+  height: var(--cursor-size, 50px);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.character.cat {
+  background-image: url('/path/to/cat.png');
+  background-size: cover;
+}
+
+.character.dog {
+  background-image: url('/path/to/dog.png');
+  background-size: cover;
+}
+
+.character:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.trail {
+  position: absolute;
+  transition: transform 0.2s ease;
+  pointer-events: none;
+}

@@ -1,0 +1,120 @@
+{
+"nurseryMaths":[
+        {
+      "id": 1,
+      "title": "Number Counting 1-100",
+      "description": "Learn to count numbers from 1 to 100",
+      "thumbnail": "/thumbnails/colors-shapes.jpg",
+      "video": "https://res.cloudinary.com/duqqyqhb7/video/upload/v1763102725/WhatsApp_Video_2025-11-13_at_15.25.38_939894ae_ouh1bv.mp4",
+      "subject": "Maths",
+      "age": "3-4"
+        },
+        {
+      "id": 2,
+      "title": "counting with cat",
+      "description": "Learn counting with a fun cat animation",
+      "thumbnail": "/thumbnails/colors-shapes.jpg",
+      "video": "https://res.cloudinary.com/duqqyqhb7/video/upload/v1763102677/WhatsApp_Video_2025-11-13_at_15.27.09_2e3eefa9_xmnchr.mp4",
+      "subject": "Maths",
+      "age": "3-4"
+        }
+      
+  ],
+
+  "nurseryHindi":[
+          {
+      "id": 1,
+      "title": " कविता- नन्हा मुन्ना राही",
+      "description": "बच्चों के लिए एक मनभावन हिंदी कविता",
+      "thumbnail": "/thumbnails/abc-song.jpg",
+      "video":"//res.cloudinary.com/duqqyqhb7/video/upload/v1763102039/WhatsApp_Video_2025-11-13_at_15.25.37_6939ee46_fcuerb.mp4",
+      "subject": "Hindi",
+      "age": "3-4"
+          },
+          {
+      "id": 2,
+      "title": "कविता- मच्छर",
+      "description": "मच्छरों पर आधारित एक मनोरंजक कविता",
+      "thumbnail": "/thumbnails/abc-song.jpg",
+      "video": "https://res.cloudinary.com/duqqyqhb7/video/upload/v1763102036/WhatsApp_Video_2025-11-13_at_15.25.36_6e635e11_iihs8o.mp4",
+      "subject": "Hindi",
+      "age": "3-4" 
+          }
+  ],
+  "nursery": [
+    {
+      "id": 1,
+      "title": "ABC Song - Learn Letters",
+      "description": "Fun alphabet song with colorful animations",
+      "thumbnail": "/thumbnails/abc-song.jpg",
+      "video": "https://res.cloudinary.com/duqqyqhb7/video/upload/v1763101821/nur_eng3_nqnp7d.mp4",
+      "subject": "English",
+      "age": "3-4"
+    },
+    {
+      "id": 2,
+      "title": "Poem - The Itsy Bitsy Spider",
+      "description": "A classic nursery rhyme with actions",
+      "thumbnail": "/thumbnails/poem-itsy bitsy spider.jpg",
+      "video": "https://res.cloudinary.com/duqqyqhb7/video/upload/v1763101797/nue_eng_mse5ja.mp4",
+      "subject": "English",
+      "age": "3-4"
+    },
+    {
+      "id": 3,
+      "title": " Poem- Twinkle Twinkle Little Star",
+      "description": "A soothing lullaby for bedtime",
+      "thumbnail": "/thumbnails/poem-twinkle twinkle little star.jpg",
+      "video": "https://res.cloudinary.com/duqqyqhb7/video/upload/v1763101767/nur_eng_mxl4hp.mp4",
+      "subject": "English",
+      "age": "3-4"
+    }
+  
+  ],
+
+  "class1": [
+    {
+      "id": 1,
+      "title": "The Straw and the shoe",
+      "description": "A story about teamwork and friendship",
+      "thumbnail": "/thumbnails/reading.jpg",
+      "video": "https://res.cloudinary.com/duqqyqhb7/video/upload/v1763442373/WhatsApp_Video_2025-11-17_at_17.32.28_cf351a38_lr57t8.mp4",
+    
+      "subject": "English",
+      "age": "5-6"
+    },
+    {
+      "id": 2,
+      "title": "Learning Action words",
+      "description": "Common action words for kids",
+      "thumbnail": "/thumbnails/action-words.jpg",
+      "video": "https://res.cloudinary.com/duqqyqhb7/video/upload/v1763370441/WhatsApp_Video_2025-11-16_at_16.15.14_c02a9ad1_e9gqbq.mp4",
+      "subject": "Math",
+      "age": "5-6"
+    }
+    ],
+    "class1Maths": [
+    {
+      "id": 1,
+      "title": "Finding the furry Cat",
+      "description": "Learn addition with a fun story",
+      "thumbnail": "/thumbnails/weather.jpg",
+      "video": "https://res.cloudinary.com/duqqyqhb7/video/upload/v1763370714/WhatsApp_Video_2025-11-16_at_16.32.45_dde27cbe_iarm2n.mp4",
+      "subject": "General",
+      "age": "5-6"
+    }
+  ],
+    
+  "class1Hindi":[
+      {
+      "id": 1,
+      "title": "मीना का परिवार",
+      "description": "मीना और उसके परिवार के बारे में एक कहानी",
+      "thumbnail": "/thumbnails/meena ka parivar.jpg",
+      "video": "https://res.cloudinary.com/duqqyqhb7/video/upload/v1763370615/WhatsApp_Video_2025-11-16_at_16.32.13_947e522e_mdcjvi.mp4",
+      "subject": "Values",
+      "age": "5-6"
+      }
+      
+  ]
+}

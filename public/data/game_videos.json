@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Memory Match Game",
+    "description": "Match the colorful shapes and learn patterns",
+    "thumbnail": "/thumbnails/memory-game.jpg",
+    "video": "/videos/memory-game.mp4",
+    "duration": "5:30",
+    "category": "Memory",
+    "age": "3-5"
+  },
+  {
+    "id": 2,
+    "title": "Number Counting Fun",
+    "description": "Count with cute animals and learn numbers 1-10",
+    "thumbnail": "/thumbnails/counting-game.jpg",
+    "video": "/videos/counting-game.mp4",
+    "duration": "4:15",
+    "category": "Math",
+    "age": "3-6"
+  },
+  {
+    "id": 3,
+    "title": "Color Sorting Puzzle",
+    "description": "Sort objects by colors and learn color names",
+    "thumbnail": "/thumbnails/color-sorting.jpg",
+    "video": "/videos/color-sorting.mp4",
+    "duration": "6:20",
+    "category": "Colors",
+    "age": "3-5"
+  },
+  {
+    "id": 4,
+    "title": "Alphabet Adventure",
+    "description": "Find letters and build words in this fun adventure",
+    "thumbnail": "/thumbnails/alphabet-game.jpg",
+    "video": "/videos/alphabet-game.mp4",
+    "duration": "7:45",
+    "category": "English",
+    "age": "4-6"
+  },
+  {
+    "id": 5,
+    "title": "Shape Builder",
+    "description": "Create amazing pictures using different shapes",
+    "thumbnail": "/thumbnails/shape-builder.jpg",
+    "video": "/videos/shape-builder.mp4",
+    "duration": "5:50",
+    "category": "Shapes",
+    "age": "3-6"
+  },
+  {
+    "id": 6,
+    "title": "Animal Sounds Quiz",
+    "description": "Listen and guess which animal makes each sound",
+    "thumbnail": "/thumbnails/animal-sounds.jpg",
+    "video": "/videos/animal-sounds.mp4",
+    "duration": "4:30",
+    "category": "Science",
+    "age": "3-5"
+  },
+  {
+    "id": 7,
+    "title": "Pattern Recognition",
+    "description": "Complete the patterns and learn sequences",
+    "thumbnail": "/thumbnails/pattern-game.jpg",
+    "video": "/videos/pattern-game.mp4",
+    "duration": "6:15",
+    "category": "Logic",
+    "age": "4-7"
+  },
+  {
+    "id": 8,
+    "title": "Rhyme Time",
+    "description": "Find words that rhyme and learn phonics",
+    "thumbnail": "/thumbnails/rhyme-game.jpg",
+    "video": "/videos/rhyme-game.mp4",
+    "duration": "5:20",
+    "category": "English",
+    "age": "4-6"
+  },
+  {
+    "id": 9,
+    "title": "Size Comparison",
+    "description": "Compare sizes and learn big, small, medium",
+    "thumbnail": "/thumbnails/size-comparison.jpg",
+    "video": "/videos/size-comparison.mp4",
+    "duration": "4:45",
+    "category": "Math",
+    "age": "3-5"
+  },
+  {
+    "id": 10,
+    "title": "Weather Explorer",
+    "description": "Learn about different weather conditions",
+    "thumbnail": "/thumbnails/weather-game.jpg",
+    "video": "/videos/weather-game.mp4",
+    "duration": "6:00",
+    "category": "Science",
+    "age": "4-7"
+  }
+]

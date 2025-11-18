@@ -1,0 +1,93 @@
+.cursor-demo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.demo-zones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.zone {
+  width: 300px;
+  height: 250px;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zone:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.learning-zone {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  border: 2px solid #4dd0e1;
+}
+
+.game-zone {
+  background: linear-gradient(135deg, #f0f4c3, #dce775);
+  border: 2px solid #cddc39;
+}
+
+.story-zone {
+  background: linear-gradient(135deg, #e1bee7, #ce93d8);
+  border: 2px solid #ba68c8;
+}
+
+.zone-content {
+  margin-top: 1rem;
+}
+
+.zone-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.cursor-controls {
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+}
+
+.demo-instructions {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.demo-instructions ul {
+  padding-left: 1.5rem;
+}
+
+.demo-instructions li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .demo-zones {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .zone {
+    width: 100%;
+    max-width: 400px;
+  }
+}

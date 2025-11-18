@@ -1,0 +1,114 @@
+:root {
+  /* Soft Pastel Color Palette */
+  --primary-blue: #92c5de;
+  --primary-blue-light: #a8d8ea;
+  --primary-blue-dark: #7bb3d3;
+  --secondary-blue: #1b4b66;
+  --accent-blue: #4a90a4;
+  --light-blue: #f0f8ff;
+  --lighter-blue: #e6f3ff;
+  
+  --cream: #fffdf5;
+  --light-cream: #f8f9fa;
+  --yellow: #fff1bd;
+  --light-yellow: #ffeaa7;
+  
+  --text-primary: #1b4b66;
+  --text-secondary: #4a90a4;
+  --text-muted: #666;
+  --text-light: #999;
+  
+  --border-light: rgba(146, 197, 222, 0.2);
+  --border-medium: rgba(146, 197, 222, 0.3);
+  --border-strong: rgba(146, 197, 222, 0.5);
+  
+  --shadow-light: 0 6px 18px rgba(0,0,0,0.06);
+  --shadow-medium: 0 10px 30px rgba(0,0,0,0.1);
+  --shadow-strong: 0 15px 40px rgba(0,0,0,0.15);
+  --shadow-blue: 0 10px 30px rgba(146, 197, 222, 0.2);
+  
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  color: var(--text-primary);
+  background: var(--cream);
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--light-blue) 100%);
+  min-height: 100vh;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-blue-dark);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-cream);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-blue-dark);
+}

@@ -1,0 +1,92 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--cream), var(--light-blue));
+  box-shadow: var(--shadow-light);
+  border: 2px solid var(--border-light);
+  transition: all 0.3s ease;
+  min-height: 120px;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: var(--shadow-strong);
+  border-color: var(--border-medium);
+  background: linear-gradient(135deg, var(--light-blue), var(--lighter-blue));
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--light-blue), var(--lighter-blue));
+  font-size: 28px;
+  border: 2px solid var(--border-light);
+  transition: all 0.3s ease;
+}
+
+.card:hover .icon {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
+  border-color: var(--primary-blue);
+  transform: scale(1.1);
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.card:hover .title {
+  color: var(--primary-blue);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+    min-height: 100px;
+    gap: 10px;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+  
+  .title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 14px;
+    min-height: 90px;
+    gap: 8px;
+  }
+  
+  .icon {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+  
+  .title {
+    font-size: 0.9rem;
+  }
+}
+
+

@@ -1,0 +1,250 @@
+.wrap {
+  padding: 24px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrap h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin: 0 0 30px;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: var(--shadow-medium);
+  border: 2px solid var(--border-light);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-strong);
+  border-color: var(--border-medium);
+}
+
+.card h3 {
+  margin: 0 0 20px;
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.row {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.row label {
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.row input,
+.row textarea,
+.row select {
+  padding: 12px 15px;
+  border: 2px solid var(--border-light);
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.row input:focus,
+.row textarea:focus,
+.row select:focus {
+  border-color: var(--primary-blue);
+}
+
+.row textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.primary {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.primary:hover {
+  background: linear-gradient(135deg, var(--primary-blue-dark), var(--primary-blue));
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-blue);
+}
+
+.preview {
+  height: 300px;
+  background: linear-gradient(135deg, var(--light-blue), var(--lighter-blue));
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--border-light);
+}
+
+.scene {
+  position: absolute;
+  inset: 0;
+}
+
+.sun {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background: var(--yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255, 211, 110, 0.6);
+}
+
+.hill {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  height: 120px;
+  background: linear-gradient(135deg, #b6f3c7, #a8e6a3);
+  border-top-left-radius: 60% 100%;
+  border-top-right-radius: 60% 100%;
+}
+
+.tree {
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
+  border-radius: 8px;
+}
+
+.play .sun {
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+.play .tree {
+  animation: grow 5s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(12px); }
+}
+
+@keyframes grow {
+  from { height: 20px; }
+  to { height: 100px; }
+}
+
+.caption {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 12px 15px;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--text-primary);
+  font-weight: 500;
+  border: 2px solid var(--border-light);
+}
+
+.audio {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .wrap {
+    padding: 20px 15px;
+  }
+  
+  .wrap h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .preview {
+    height: 250px;
+  }
+  
+  .sun {
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .tree {
+    left: 60px;
+    bottom: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap h2 {
+    font-size: 1.8rem;
+  }
+  
+  .card {
+    padding: 15px;
+  }
+  
+  .preview {
+    height: 200px;
+  }
+  
+  .sun {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .tree {
+    left: 40px;
+    bottom: 60px;
+    width: 15px;
+    height: 15px;
+  }
+  
+  .caption {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+

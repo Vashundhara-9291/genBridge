@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "The Wise Banyan Tree",
+    "description": "A story about patience, wisdom, and helping others",
+    "thumbnail": "/thumbnails/banyan-tree.jpg",
+    "video": "/videos/banyan-tree.mp4",
+    "duration": "8:30",
+    "moral": "Patience and wisdom help us grow strong",
+    "age": "3-8",
+    "tags": ["Patience", "Wisdom", "Nature"]
+  },
+  {
+    "id": 2,
+    "title": "The Little Ant's Big Dream",
+    "description": "An ant learns that hard work and determination lead to success",
+    "thumbnail": "/thumbnails/ant-dream.jpg",
+    "video": "/videos/ant-dream.mp4",
+    "duration": "7:15",
+    "moral": "Hard work and determination make dreams come true",
+    "age": "3-8",
+    "tags": ["Hard Work", "Determination", "Dreams"]
+  },
+  {
+    "id": 3,
+    "title": "Sharing is Caring",
+    "description": "Two friends learn the joy of sharing their toys",
+    "thumbnail": "/thumbnails/sharing-story.jpg",
+    "video": "/videos/sharing-story.mp4",
+    "duration": "6:45",
+    "moral": "Sharing brings happiness to everyone",
+    "age": "3-6",
+    "tags": ["Sharing", "Friendship", "Kindness"]
+  },
+  {
+    "id": 4,
+    "title": "The Honest Woodcutter",
+    "description": "A woodcutter's honesty is rewarded by a magical river",
+    "thumbnail": "/thumbnails/woodcutter.jpg",
+    "video": "/videos/woodcutter.mp4",
+    "duration": "9:20",
+    "moral": "Honesty is always the best policy",
+    "age": "4-8",
+    "tags": ["Honesty", "Reward", "Magic"]
+  },
+  {
+    "id": 5,
+    "title": "The Rainbow Bridge",
+    "description": "Animals work together to build a bridge across a river",
+    "thumbnail": "/thumbnails/rainbow-bridge.jpg",
+    "video": "/videos/rainbow-bridge.mp4",
+    "duration": "8:00",
+    "moral": "Teamwork makes everything possible",
+    "age": "3-8",
+    "tags": ["Teamwork", "Cooperation", "Animals"]
+  }
+]

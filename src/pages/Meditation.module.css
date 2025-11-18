@@ -1,0 +1,422 @@
+.meditationContainer {
+  padding: 24px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #1b4b66;
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #4a90a4;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.meditationCard {
+  background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(146, 197, 222, 0.2);
+  border: 2px solid rgba(146, 197, 222, 0.3);
+  margin-bottom: 30px;
+}
+
+.timerSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timer {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.timeDisplay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1b4b66;
+  z-index: 2;
+}
+
+.progressRing {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.progressSvg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.progressBackground {
+  fill: none;
+  stroke: rgba(146, 197, 222, 0.3);
+  stroke-width: 8;
+}
+
+.progressBar {
+  fill: none;
+  stroke: #92c5de;
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.startBtn,
+.pauseBtn,
+.resetBtn,
+.restartBtn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.startBtn {
+  background: linear-gradient(135deg, #4CAF50, #66BB6A);
+  color: white;
+}
+
+.startBtn:hover {
+  background: linear-gradient(135deg, #45a049, #5cb85c);
+  transform: scale(1.05);
+}
+
+.pauseBtn {
+  background: linear-gradient(135deg, #FF9800, #FFB74D);
+  color: white;
+}
+
+.pauseBtn:hover {
+  background: linear-gradient(135deg, #f57c00, #ffa726);
+  transform: scale(1.05);
+}
+
+.resetBtn {
+  background: linear-gradient(135deg, #6c757d, #868e96);
+  color: white;
+}
+
+.resetBtn:hover {
+  background: linear-gradient(135deg, #5a6268, #6c757d);
+  transform: scale(1.05);
+}
+
+.restartBtn {
+  background: linear-gradient(135deg, #92c5de, #a8d8ea);
+  color: white;
+  font-size: 1.2rem;
+  padding: 18px 35px;
+}
+
+.restartBtn:hover {
+  background: linear-gradient(135deg, #7bb3d3, #96d0e6);
+  transform: scale(1.05);
+}
+
+.meditationContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.breathingGuide,
+.ambientSounds {
+  text-align: center;
+}
+
+.breathingGuide h3,
+.ambientSounds h3 {
+  color: #1b4b66;
+  margin: 0 0 20px;
+  font-size: 1.3rem;
+}
+
+.breathingCircle {
+  width: 120px;
+  height: 120px;
+  border: 3px solid rgba(146, 197, 222, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.breathIndicator {
+  font-size: 1rem;
+  color: #4a90a4;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.breathing {
+  animation: breathe 4s ease-in-out infinite;
+  color: #1b4b66;
+  font-weight: 600;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.breathingText {
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.ambientSounds p {
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.rewardModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.rewardContent {
+  background: linear-gradient(135deg, #fff, #f8f9fa);
+  border-radius: 25px;
+  padding: 40px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(146, 197, 222, 0.3);
+  animation: rewardPop 0.5s ease-out;
+}
+
+@keyframes rewardPop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.rewardIcon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.rewardContent h2 {
+  color: #1b4b66;
+  margin: 0 0 15px;
+  font-size: 2rem;
+}
+
+.rewardContent p {
+  color: #666;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.closeRewardBtn {
+  background: linear-gradient(135deg, #92c5de, #a8d8ea);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.closeRewardBtn:hover {
+  background: linear-gradient(135deg, #7bb3d3, #96d0e6);
+  transform: scale(1.05);
+}
+
+.tips {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(146, 197, 222, 0.2);
+}
+
+.tips h3 {
+  color: #1b4b66;
+  margin: 0 0 20px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.tips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tips li {
+  color: #666;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(146, 197, 222, 0.2);
+  position: relative;
+  padding-left: 25px;
+}
+
+.tips li:last-child {
+  border-bottom: none;
+}
+
+.tips li::before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .meditationContainer {
+    padding: 20px 15px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .meditationCard {
+    padding: 30px 20px;
+  }
+  
+  .progressRing {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .timeDisplay {
+    font-size: 2rem;
+  }
+  
+  .meditationContent {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .startBtn,
+  .pauseBtn,
+  .resetBtn,
+  .restartBtn {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .breathingCircle {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .rewardContent {
+    padding: 30px 20px;
+  }
+  
+  .rewardIcon {
+    font-size: 3rem;
+  }
+  
+  .rewardContent h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .meditationCard {
+    padding: 25px 15px;
+  }
+  
+  .progressRing {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .timeDisplay {
+    font-size: 1.5rem;
+  }
+  
+  .breathingCircle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .breathIndicator {
+    font-size: 0.9rem;
+  }
+}
